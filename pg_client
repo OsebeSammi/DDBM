@@ -1,0 +1,46 @@
+﻿--
+-- Database: `malnutrition`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `child`
+--
+
+CREATE TABLE IF NOT EXISTS malnutrition.child (
+  child_id int CONSTRAINT firstkey PRIMARY KEY,
+  camp_id int DEFAULT NULL,
+  fName varchar(25) NOT NULL,
+  mName varchar(25) NOT NULL,
+  lName varchar(25) NOT NULL,
+  dob date NOT NULL,
+  sex varchar(10) NOT NULL,
+  status varchar(100) NOT NULL,
+  family_id int NOT NULL,
+  timestamp timestamp
+);
+--
+-- Dumping data for table `child`
+--
+
+INSERT INTO child (child_id, camp_id, fName, mName, lName, dob, sex, status, family_id, timestamp) VALUES
+(33, 1, 'John', 'Fani', 'Enala', '2014-07-09', 'Male', '1', 1, '2014-01-16 07:40:35'),
+(34, 1, 'Esther', 'Kanu', 'Pina', '2014-02-04', 'Female', '1', 1, '2015-01-27 07:40:39'),
+(35, 2, 'Hanson', 'Den', 'Atwoli', '2014-05-04', 'Male', '1', 2, '2014-02-27 07:40:43'),
+(36, 2, 'Mary', 'Mali', 'Herby', '2014-05-08', 'Female', '1', 3, '2014-03-20 07:40:47'),
+(37, 2, 'joonh', 'paul', 'fanuel', '2014-05-08', 'Male', '2', 2, '2014-04-17 07:40:51'),
+(38, 3, 'Mary', 'maggy', 'Onia', '2012-12-14', 'female', '1', 4, '2015-01-22 17:11:37'),
+(39, 1, 'ajkaadk', 'asdgasd', 'sdadsga', '2012-12-14', 'Male', '1', 4, '2014-05-21 21:17:00'),
+(40, 2, 'shsdf', 'asdah', 'adfdah', '2012-03-14', 'male', '1', 3, '2014-05-15 17:12:05'),
+(41, 3, 'ehhgfsdfgn', 'sdfghjdfb', 'asdgadh', '2014-10-22', 'female', '1', 4, '2014-05-05 17:12:24'),
+(42, 1, 'dsfhwh', 'hfjfgh', 'djfgjdg', '2014-10-06', 'female', '2', 2, '2014-06-10 17:12:37'),
+(43, 2, 'dsfghsdh', 'asdfafg', 'asdfghdfh', '2014-11-10', 'male', '2', 2, '2014-06-20 17:12:48'),
+(44, 3, 'werhyew', 'ewrhewrh', 'aeerg', '2014-12-09', 'female', '1', 2, '2014-06-11 17:12:54'),
+(46, 2, 'rewgwre', 'addgg', 'arderger', '2014-04-15', 'male', '1', 1, '2014-07-03 17:12:58'),
+(47, 3, 'sdfg', 'hfvdg', 'lhgfd', '2014-10-13', 'female', '2', 3, '2014-05-07 21:00:00'),
+(48, 1, 'dsfdhs', 'jdgndv', 'kjhgf', '2015-01-06', 'male', '1', 1, '2015-04-07 21:00:00'),
+(49, 3, 'gfjgj', 'gfkj', 'oilkmjhngf', '2015-01-04', 'female', '2', 3, '2014-04-09 21:00:00'),
+(50, 2, 'khgkh', 'fdgjdghkjd', 'dfghdkdgk', '2014-07-14', 'male', '1', 2, '2014-12-31 21:00:00'),
+(51, 3, 'lkjhgfdh', 'dfghdket', 'sfjjy', '2015-01-03', 'female', '1', 1, '2015-01-22 17:16:59'),
+(52, 1, 'dfadf', 'sdfshdfh', 'fshfj', '2014-04-07', 'female', '0', 2, '2014-02-12 21:00:00');

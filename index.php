@@ -24,7 +24,7 @@
 
                 success: function( text )
                 {
-                    $("#result").html(text);
+                    $("#result").append(text);
                 },
 
                 error: function( xhr, status, errorThrown ) {
@@ -49,6 +49,8 @@
     <script>
         function getQuery()
         {
+            $("#result").html("");
+
             var valueTA = $("textarea[name=query]").val();
             var fromIndex = valueTA.indexOf("FROM");
             var whereIndex = valueTA.indexOf("WHERE");
