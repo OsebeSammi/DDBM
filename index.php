@@ -64,12 +64,26 @@
 
             tableName = tableName.trim();
 
+            var link = [];
             //looping through globla schema
             $.each(configJson.tables,function(t,obj)
             {
                 if(t == tableName)
                 {
-                    $.each()
+                   var count = 0;
+                    $.each(obj.fragments,function(i,tab)
+                    {
+                        link[count] = i;
+                        count++;
+                    });
+                }
+            });
+
+            $.each(configJson.sites,function(i,aSite)
+            {
+                if($.inArray(i,link))
+                {
+                    alert();
                 }
             });
         }

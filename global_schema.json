@@ -29,7 +29,7 @@
         "child":
         {
             "columns_list":["child_id","camp_id","fName","mName","lName","dob","sex","status","family_id","timestamp"],
-            "fragmented":"no",
+            "fragmented":"yes",
             "fragment_type":"none",
             "fragments":
             {
