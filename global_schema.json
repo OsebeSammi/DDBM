@@ -1,0 +1,53 @@
+{
+    "db_name":"malnutrition",
+    "sites":
+    {
+        "localhost":"http://localhost/MiddleWare/db.php",
+        "syintelli":"http://54.186.161.132/db.php"
+    },
+    "tables":
+    {
+        "tbl_users":
+        {
+            "columns_list":["id","username","password","email","activkey","createtime","lastvisit","superuser","status","role_id"],
+            "fragmented":"no",
+            "fragment_type":"none",
+            "fragments":
+            {
+                "localhost":
+                {
+                    "columns":["id","username","password","email","activkey","createtime","lastvisit","superuser","status","role_id"],
+                    "predicate":
+                    {
+
+                    }
+
+                }
+            }
+        },
+
+        "child":
+        {
+            "columns_list":["child_id","camp_id","fName","mName","lName","dob","sex","status","family_id","timestamp"],
+            "fragmented":"no",
+            "fragment_type":"none",
+            "fragments":
+            {
+                "syintelli":
+                {
+                    "predicate":
+                    {
+                        "id":["<","33"]
+                    }
+                },
+                "localhost":
+                {
+                    "predicate":
+                    {
+                        "id":[">","32"]
+                    }
+                }
+            }
+        }
+    }
+}

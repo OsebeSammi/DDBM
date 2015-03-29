@@ -1,0 +1,15 @@
+{
+    "site": "localhost",
+    "query_link":"http://localhost/MiddleWare/db.php",
+    "tables":
+    {
+        "tbl_users":
+        {
+            "columns":["id","username","password","email","activkey","createtime","lastvisit","superuser","status","role_id"],
+            "predicate":
+            {
+                "id":["<","3"]
+            }
+        }
+    }
+}
