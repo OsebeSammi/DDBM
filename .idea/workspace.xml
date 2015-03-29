@@ -48,9 +48,23 @@
       <file leaf-file-name="db.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36548224" vertical-offset="0" max-vertical-offset="1404">
-              <caret line="17" column="11" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="1.9796954" vertical-offset="0" max-vertical-offset="1368">
+              <caret line="70" column="16" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+              <folding>
+                <marker date="1427670220606" expanded="true" signature="729:748" placeholder="SELECT * FRO..child..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbBackUp.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbBackUp.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2307692" vertical-offset="550" max-vertical-offset="1512">
+              <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="25" />
+              <folding>
+                <element signature="e#6#92#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,6 +81,8 @@
       <list>
         <option value="$PROJECT_DIR$/global_schema.json" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/dbBackUp.php" />
+        <option value="$PROJECT_DIR$/db.php" />
       </list>
     </option>
   </component>
@@ -271,12 +287,12 @@
       <created>1427654844180</created>
       <updated>1427654844180</updated>
       <workItem from="1427654842885" duration="148000" />
-      <workItem from="1427655192847" duration="8348000" />
+      <workItem from="1427655192847" duration="10850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8496000" />
+    <option name="totallyTimeSpent" value="10998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1366" y="-4" width="1366" height="772" extended-state="6" />
@@ -366,7 +382,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1494">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1427670220606" expanded="true" signature="729:748" placeholder="SELECT * FRO..child..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -395,11 +413,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/pgsql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36347198" vertical-offset="501" max-vertical-offset="37854">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbBackUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2307692" vertical-offset="550" max-vertical-offset="1512">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="25" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36548224" vertical-offset="0" max-vertical-offset="1404">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="1.9796954" vertical-offset="0" max-vertical-offset="1368">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+          <folding>
+            <marker date="1427670220606" expanded="true" signature="729:748" placeholder="SELECT * FRO..child..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -16,29 +16,29 @@ $username = "root";
 $password = "sam";
 $dbName = "malnutrition";
 
-// Create connection postgre
-$conn = pg_connect("host=localhost dbname=malnutrition user=postgres");
-
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbName);
 
 
 // Check connection
-/*if ($conn->connect_error)
+if ($conn->connect_error)
 {
     die("Connection failed: " . $conn->connect_error);
     echo "FAILED";
     exit;
-}*/
+}
 
 if(isset($_POST['sql']))
 {
-    //$sql = $_POST['sql'];
 
-    $result = pg_query($conn, "SELECT * FROM child") or die("Cannot execute query: $sql\n");
+    $sql = $_POST['sql'];
+    $result = $conn->query($sql);
 
-    //if ($result->num_rows > 0)
+
+    if ($result->num_rows > 0)
     {
         // output data of each row
-        $row = pg_fetch_assoc($result);
+        $row = $result->fetch_assoc();
 
         echo "<table>";
         echo "<thead><tr>";
@@ -55,17 +55,20 @@ if(isset($_POST['sql']))
         }
         echo "</tr>";
 
-        while($row = pg_fetch_assoc($result))
+        while($row = $result->fetch_assoc())
         {
             echo "<tr>";
-                foreach($row as $key => $r)
-                {
-                    echo "<td>".$r."</td>";
-                }
+            foreach($row as $key => $r)
+            {
+                echo "<td>".$r."</td>";
+            }
             echo "</tr>";
         }
 
         echo "</table>";
+    }
+    else {
+        echo "No results";
     }
 }
 else
@@ -73,4 +76,4 @@ else
     echo "NO QUERY!!";
 }
 
-pg_close($conn);
+$conn->close();
